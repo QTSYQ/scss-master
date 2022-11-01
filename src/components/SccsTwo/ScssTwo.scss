@@ -1,0 +1,96 @@
+header {
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 6vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  .header__left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    span {
+      margin-right: 55px;
+    }
+    & div:last-child {
+      color: gainsboro;
+    }
+    .logo {
+      padding: 0px 10px;
+      margin-right: 25px;
+    }
+  }
+  .header__left:hover {
+    background-color: gainsboro;
+    span {
+      color: white;
+    }
+    .logo {
+      span {
+        color: black;
+      }
+    }
+  }
+
+  .header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    span {
+      padding: 0px 10px;
+    }
+    & div:first-child span:first-child {
+      margin-right: 60px;
+    }
+    & div:last-child span {
+      position: absolute;
+      right: 0;
+      bottom: 12px;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    &:hover {
+      background-color: gainsboro;
+    }
+  }
+  span {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+.header__left div:first-child:hover {
+  span {
+    color: white;
+  }
+}
+
+main {
+  margin-top: 6vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 45vh;
+  .content {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    img {
+      background-image: url("/feature/크으으.jpeg");
+      width: 100%;
+      height: 100%;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    .content__title {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
