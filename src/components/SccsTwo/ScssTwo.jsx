@@ -1,4 +1,4 @@
-import "./ScssTwo";
+import "./ScssTwo.scss";
 
 export default function ScssTwo() {
   return (

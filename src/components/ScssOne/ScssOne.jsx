@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./ScssOne.scss";
 export default function ScssOne() {
   return (
     <>
